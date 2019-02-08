@@ -1,0 +1,5 @@
+/vendor/*
+Gopkg.lock
+socks-proxy
+/go/*
+fedora-cyberprobe*.rpm

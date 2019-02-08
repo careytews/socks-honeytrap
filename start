@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo Starting cyberprobe...
+
+cyberprobe /etc/cyberprobe.cfg > /cyberprobe.log 2>&1 </dev/null &
+
+echo Starting socks proxy service...
+/usr/local/bin/socks-proxy -m
+

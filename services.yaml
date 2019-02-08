@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: socks-honeytrap
+  labels:
+    app: socks-honeytrap
+spec:
+  ports:
+  - name: proxy
+    port: 1080
+    targetPort: 1080
+    protocol: TCP
+  selector:
+    app: socks-honeytrap
+  type: LoadBalancer
+  loadBalancerIP: 13.92.159.130
+  externalTrafficPolicy: Local
